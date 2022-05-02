@@ -1,0 +1,25 @@
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 100px;
+}
+.services-container img{
+    width: 312px;
+    border-radius:0 20px;
+}
+.services-container button {
+    padding: 20px;
+    width: 100%;
+    border-radius:0 18px;
+    background-color: rgb(6, 22, 43);
+    border: none;
+    color: white;
+}
+.services-container button:hover{
+    background-color: rgb(61, 83, 112);
+}
+.cart-container{
+    border: 2px solid lightgray;
+    margin: 20px;
+    border-radius:0 20px;
+}
