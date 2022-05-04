@@ -5,7 +5,7 @@ import "./Services.css"
 const Services = ({ Services }) => {
     const { img, name,price} = Services;
     const handleCheckOutBtn = ()=>{
-
+        // return 
     }
     return (
        <div className="cart-container">
