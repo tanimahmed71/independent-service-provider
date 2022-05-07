@@ -15,7 +15,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
       const location =useLocation();
-      const from =location.state?.form?.pathname || "/home";
+      const from =location.state?.form?.pathname || "/checkout";
     const handleEmailBlur =event =>{
         setEmail(event.target.value)
     }

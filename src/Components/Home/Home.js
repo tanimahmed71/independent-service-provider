@@ -30,7 +30,7 @@ const Home = () => {
     <div className='home-container'>
       <h1>Wild photography</h1>
       <img src={"https://i.ibb.co/kGmxxLr/closeup-shot-cute-elephant-walking-dry-grass-wilderness.jpg"}  alt="" />
-        <h1 style={{margin:"50px"}}>Latest Services</h1>
+        <h1 style={{margin:"50px"}}>Services</h1>
      <div className="services-container">
         {
           allServices.map(Service=><Services  services 

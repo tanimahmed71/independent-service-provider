@@ -19,7 +19,7 @@ const Header = () => {
             <Link to={"/registration"}>Registration</Link>
             {
                 user?
-                <button onClick={handleSignOut} className='sign-out-btn'>Sign out </button>:
+                <button onClick={handleSignOut} className='sign-out-btn'>Log out </button>:
                 <Link to={"/login"}>Login</Link>
             }
         </header>
