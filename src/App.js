@@ -9,13 +9,18 @@ import Registration from "./Components/Registration/Registration";
 import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NorFound/NotFound';
 import Login from './Components/Login/Login';
+import RequireAuth from './Components/NorFound/RequireAuth/RequireAuth';
 function App() {
   return (
     <div className="App">
     <Header></Header>
     <Routes>
       <Route path="/home"element={<Home> </Home>}></Route>
-      <Route path="/checkout"element={<CheckOut></CheckOut>}></Route>
+      <Route path="/checkout"element={
+        <RequireAuth>
+          <CheckOut></CheckOut>
+        </RequireAuth>
+      }></Route>
       <Route path="/blogs"element={<Blogs></Blogs>}></Route>
       <Route path="/about"element={<About></About>}></Route>
       <Route path="/registration"element={<Registration></Registration>}></Route>
