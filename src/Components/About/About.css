@@ -1,0 +1,14 @@
+.about-container img{
+    border-radius: 50%;
+    width: 50%;
+}
+.about-container {
+    display: flex;
+    margin: 30px;
+    align-content: center;
+    text-align: center;
+}
+.about-container p{
+    margin-top: 50px;
+    color: rgb(9, 48, 45);
+}
