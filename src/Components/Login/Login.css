@@ -78,3 +78,39 @@
     margin-left: 13px;
     
 }
+@media  only screen and (max-width:768px) {
+    .form-container{
+        text-align: center;
+        border: 1px solid #95A0A7;
+        border-radius: 8px;
+        width: 300px;
+        /* margin: 10px 0; */
+    }
+    .input-group input{
+        width: 200px;
+        font-size: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        border: 1px solid rgb(2, 11, 17)
+        ;
+    }
+    .input-btn{
+        width: 200px;
+        height: 55px;
+        background-color:lightsalmon;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .google-btn{
+        width: 200px;
+        padding: 15px;
+        cursor: pointer;
+        background-color: lightsalmon;
+        border-radius: 8px;
+        font-size: 18px;
+        border: none;
+    }
+}
+

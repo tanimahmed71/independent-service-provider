@@ -1,3 +1,4 @@
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import React from 'react';
 import { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -29,6 +30,13 @@ const Login = () => {
             navigate(from,{replace:true});
         }
     }
+    const provider =  new GoogleAuthProvider();
+    const handelSignInWithGoogle =()=>{
+        signInWithPopup(auth,provider)
+        .then(()=>{
+            console.log('sign in with google');
+        })
+    }
     return ( 
     <div className = 'login' >
         <div> 
@@ -57,7 +65,7 @@ const Login = () => {
              </div>
          </div>
          <div className='google-container'>    
-         <input className='google-btn' type="submit" value="Continue With Google" />  
+         <input className='google-btn' type="submit" onClick={handelSignInWithGoogle } value="Continue With Google" />  
          </div>
         </form>
         </div>

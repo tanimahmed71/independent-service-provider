@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/"element={<Home> </Home>}></Route>
       <Route path="/home"element={<Home> </Home>}></Route>
-      <Route path="/checkout"element={
+      <Route path="/checkout"element = {
         <RequireAuth>
           <CheckOut></CheckOut>
         </RequireAuth>
