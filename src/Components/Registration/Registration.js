@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import "../Login/Login.css";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from "../../firebase_init"
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 const Registration = () => {
     const [email, setEmail] = useState();
@@ -11,9 +12,8 @@ const Registration = () => {
     const [confirmPassword, setConfirmPassword] = useState();
     const [error, setError] = useState();
     const navigate = useNavigate();
-
+    
     const [createUserWithEmailAndPassword, user,] = useCreateUserWithEmailAndPassword(auth);
-
     const handleEmailBlur = (event) => {
         setEmail(event.target.value)
     }
@@ -38,6 +38,13 @@ const Registration = () => {
         }
         createUserWithEmailAndPassword(email, password)
     }
+    const provider = new GoogleAuthProvider();
+    const handleGoogle =()=>{
+        signInWithPopup(auth,provider)
+        .then(()=>
+            console.log("kdfjdkfj")
+        )
+    }
     return (
         <div className='login' >
             <div>
@@ -45,7 +52,7 @@ const Registration = () => {
                     <h1 className='from-title' >REGISTRATION</h1>
                     <form onSubmit={handleCreateUser}>
                         <div className="input-group">
-                            <label htmlFor="email" > <p>Email </p></label><input onBlur={handleEmailBlur} type="email" name="email" placeholder='Enter your email' id="" required />
+                            <label htmlFor="email" > <p><b>Email</b></p></label><input onBlur={handleEmailBlur} type="email" name="email" placeholder='Enter your email' id="" required />
                         </div>
                         <div className="input-group">
                             <label htmlFor="password"><p><b>Password</b></p></label>
@@ -68,7 +75,7 @@ const Registration = () => {
                     </div>
                 </div>
                 <div className='google-container'>
-                    <input className='google-btn' type="submit" value="Continue With Google" />
+                    <input className='google-btn' onClick={handleGoogle}type="submit" value="Continue With Google" />
                 </div>
             </form>
         </div>

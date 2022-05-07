@@ -13,11 +13,10 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
-        loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
       const location =useLocation();
-      const from =location.state?.form?.pathname || "/";
+      const from =location.state?.form?.pathname || "/home";
     const handleEmailBlur =event =>{
         setEmail(event.target.value)
     }
@@ -45,9 +44,6 @@ const Login = () => {
              <input onBlur={handlePasswordBlur} type="password" name="password" placeholder='Enter your password' id=""required />
          </div>
          <p style={{color:"red"}}>{error?.message}</p>
-         {
-             loading && <p>Loading...</p>
-         }
          <input className='input-btn' type="submit" value="Login" />
          <p>You haven't account?<span> <Link to="/registration">Create New Account</Link></span></p>
          <div className='or-container'>

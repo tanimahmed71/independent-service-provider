@@ -4,9 +4,7 @@ import "./Services.css"
 
 const Services = ({ Services }) => {
     const { img, name,price} = Services;
-    const handleCheckOutBtn = ()=>{
-        // return 
-    }
+ 
     return (
        <div className="cart-container">
             <CardGroup>
@@ -19,7 +17,7 @@ const Services = ({ Services }) => {
                         additional content. 
                     </Card.Text>
                     <h3>Price:{price}</h3>
-                    <button onClick={handleCheckOutBtn}>CheckOut</button>
+                    <a href="/checkout"><button>CheckOut</button></a>
                 </Card.Body>
             </Card>
         </CardGroup>
