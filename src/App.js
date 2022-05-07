@@ -8,6 +8,7 @@ import About from "./Components/About/About";
 import Registration from "./Components/Registration/Registration";
 import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NorFound/NotFound';
+import Login from './Components/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,8 @@ function App() {
       <Route path="/checkout"element={<CheckOut></CheckOut>}></Route>
       <Route path="/blogs"element={<Blogs></Blogs>}></Route>
       <Route path="/about"element={<About></About>}></Route>
-      <Route path="/login"element={<Registration></Registration>}></Route>
+      <Route path="/registration"element={<Registration></Registration>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
       <Route path="*"element={<NotFound></NotFound>}></Route>
     </Routes>
       <Footer></Footer>

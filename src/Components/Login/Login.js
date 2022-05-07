@@ -1,5 +1,10 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useState } from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../firebase_init';
+import "./Login.css";
+// import "./Login.css";
 
 const Login = () => {
     const [email,setEmail]=useState('')
@@ -26,10 +31,8 @@ const Login = () => {
             navigate(from,{replace:true});
         }
     }
-
-    return (
-        <div>
-             <div className = 'login' >
+    return ( 
+    <div className = 'login' >
         <div> 
         <div className = 'form-container' >
         <h1 className = 'from-title' > LOGIN </h1>
@@ -67,7 +70,6 @@ const Login = () => {
         </div>
         </div>
          </div>
-        </div>
     );
 };
 
