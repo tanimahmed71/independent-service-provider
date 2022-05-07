@@ -1,6 +1,7 @@
 .checkout-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 20px;
 }
 .checkout-container hr{
     width: 52%;
@@ -13,11 +14,13 @@
     outline: none;
 }
 .checkout-container form{
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .checkout-container img{
     width: 60%;
     height: 90%;
+    margin-left: 40px;
+    border-radius: 8px;
 }
 .checkout-container button{
     padding: 20px;
@@ -27,4 +30,11 @@
     border: none;
     color: white;
     margin: 10px;
+}
+.project-highlight img{
+    border-radius: 4px;
+    margin: 20px;
+}
+.project-highlight h2{
+    margin-top: 20px;
 }
