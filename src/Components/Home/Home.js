@@ -33,7 +33,7 @@ const Home = () => {
         <h1 style={{margin:"50px"}}>Latest Services</h1>
      <div className="services-container">
         {
-          allServices.map(Service=><Services 
+          allServices.map(Service=><Services  services 
             key={Service.id}
             Services={Service}
             ></Services>)

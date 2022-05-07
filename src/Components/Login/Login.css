@@ -27,19 +27,20 @@
     font-size: 20px;
     border-radius: 8px;
     box-sizing: border-box;
-    border: 1px solid rgba(149, 160, 167, 1)
+    border: 1px solid rgb(2, 11, 17)
     ;
 }
 .input-btn{
     width: 415px;
     height: 55px;
-    background-color: rgba(255, 153, 0, 0.3);
+    background-color:lightsalmon;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-size: 20px;
 }
 .input-btn:hover{
-    background-color: rgba(255, 153, 0, 0.8);
+    background-color:rgb(172, 136, 122) ;
 }
 .login span a{
     color: orange;
@@ -51,26 +52,24 @@
     margin:30px;
 }
 .google-btn{
-    display: flex;
-    padding: 20px;
-    margin-left: 40px;
+    width: 420px;
+    padding: 15px;
     cursor: pointer;
+    background-color: lightsalmon;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
 }
-img{
-    height: 20px;
-    width: 20px;
-    margin-top: 20px;
+.google-btn:hover{
+    background-color:rgb(172, 136, 122);
 }
+
 .google-btn input{
     background-color: none;
     border: none;
 }
 .google-container{
-    margin: 50px;
-    border: 1px solid gray;
-    border-radius: 8px;
-    background-color: rgb(233, 230, 230);
-    padding: 0% ;
+    margin: 35px;
 }
 .login p{
     font:x-large

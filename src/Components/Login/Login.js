@@ -49,7 +49,7 @@ const Login = () => {
              loading && <p>Loading...</p>
          }
          <input className='input-btn' type="submit" value="Login" />
-         <p>New to Ema-john?<span> <Link to="/signup">Create New Account</Link></span></p>
+         <p>You haven't account?<span> <Link to="/registration">Create New Account</Link></span></p>
          <div className='or-container'>
              <div>
                  <hr />
@@ -61,10 +61,8 @@ const Login = () => {
                  <hr />
              </div>
          </div>
-         <div className='google-container'>
-         <div className="google-btn">
-                    <img src="google.png" alt="" /><input className='google-btn' type="submit" value="Continue With Google" />  
-            </div>
+         <div className='google-container'>    
+         <input className='google-btn' type="submit" value="Continue With Google" />  
          </div>
         </form>
         </div>
