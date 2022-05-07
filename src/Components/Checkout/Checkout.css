@@ -1,0 +1,30 @@
+.checkout-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.checkout-container hr{
+    width: 52%;
+}
+.checkout-container input{
+    font-size: 19px;
+    margin-bottom: 10px;
+    border-color: transparent;
+    border:0px solid;
+    outline: none;
+}
+.checkout-container form{
+    margin-top: 80px;
+}
+.checkout-container img{
+    width: 60%;
+    height: 90%;
+}
+.checkout-container button{
+    padding: 20px;
+    width: 52%;
+    border-radius:0 18px;
+    background-color: rgb(6, 22, 43);
+    border: none;
+    color: white;
+    margin: 10px;
+}
